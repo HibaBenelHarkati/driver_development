@@ -67,13 +67,13 @@ void GPIO_initi(volatile GPIO_registers *GPIOx,
 		uint8_t gpioCnf){
 
 
-		if(gpioPinNumber<8){												//le cas du low + writing the pinmode in the corresponding registere
+		if(gpioPinNumber<8){												//le cas du low + writing the pinmode in the corresponding register
 
 			GPIOx -> reg_CR[0]&=~(0xF<<(4*gpioPinNumber));		//clear the bits of gpioMode pin
 			//ecriture ds les pin MODE
 			uint32_t tmp=0;
 			tmp = gpioMode|(gpioCnf<<2); 		//cfg les positions initialement [CNF1 CNF0 MODE1 MODE0]
-			GPIOx -> reg_CR[0]|=(tmp<<4*gpioPinNumber);						//copying using tmp so that it wont affct the original bits in the clr register
+			GPIOx -> reg_CR[0]|=(tmp<<4*gpioPinNumber);						//copy using tmp so that it wont affct the original bits in the clr register
 
 
 		}
