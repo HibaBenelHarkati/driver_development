@@ -1,0 +1,6 @@
+../Src/../gpio_devv/gpio_devv.c:11:6:activeClock	4	static
+../Src/../gpio_devv/gpio_devv.c:22:6:GPIO_clockControl	16	static
+../Src/../gpio_devv/gpio_devv.c:64:6:GPIO_initi	24	static
+../Src/../gpio_devv/gpio_devv.c:92:6:External_hardwareInterrupts	24	static,ignoring_inline_asm
+../Src/main.c:10:5:main	8	static
+../Src/main.c:35:6:EXTI0_IRQHandler	4	static
