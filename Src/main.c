@@ -1,7 +1,7 @@
 /*
  * main.c
  *
- *  Created on: Oct 6, 2025
+ * 
  *      Author: PC
  */
 #include <stdint.h>
